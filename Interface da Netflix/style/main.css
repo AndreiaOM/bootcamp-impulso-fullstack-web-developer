@@ -1,0 +1,110 @@
+:root{
+    --laranja: #ff9100;
+    --preta: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--laranja);
+    font-family: 'Arial Black', Times;
+    font-size: 30px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*Anime principal*/
+.anime-principal{
+    font-size: 90%;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/attack-on-titans.jpg');
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.anime-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.anime-principal .titulo {
+    font-size: 300%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.65);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.anime-principal .container{
+    width: 70%;
+    text-align: justify;
+}
+
+.box-anime {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-animes {
+    margin-top: 5px;
+}
+
+.botoes {
+    margin-bottom: 10%;
+}
